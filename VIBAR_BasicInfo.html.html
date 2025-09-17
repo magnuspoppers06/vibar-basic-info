@@ -3,11 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Information - Joseph Magnus Vibar</title>
+    <title>Quiz 3.1</title>
     <style>
+        .movies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-bottom: 18px;
+        }
+        .movie-item {
+            width: 220px;
+            background: #e6f0ff;
+            border: 2px solid #339cff;
+            padding: 8px;
+            margin-bottom: 8px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .movie-item img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 6px;
+            border: 1.5px solid #0057b8;
+            background: #fff;
+        }
         body {
-            background-color: #f4f6fa;
-            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #f9f9f9 0%, #e6f0ff 100%);
+            font-family: Arial, Helvetica, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -15,72 +38,114 @@
         .container {
             background: #fff;
             max-width: 800px;
-            margin: 40px auto 40px auto;
-            padding: 32px 32px 24px 32px;
-            border-radius: 16px;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.10), 0 1.5px 4px rgba(0,0,0,0.08);
+            margin: 30px auto 30px auto;
+            padding: 20px 20px 16px 20px;
+            border: 2px solid #339cff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px #b3d8ff;
         }
         h1, h2, h3 {
-            color: #2a2a2a;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            margin-top: 0;
+            color: #0057b8;
+            margin-top: 0.5em;
         }
         h1 {
-            font-size: 2.2em;
-            margin-bottom: 0.3em;
+            font-size: 2em;
+            margin-bottom: 0.2em;
+            border-bottom: 2px solid #339cff;
+            padding-bottom: 0.2em;
+            background: linear-gradient(90deg, #e6f0ff 60%, #b3d8ff 100%);
+            text-align: center;
         }
         h2 {
-            font-size: 1.5em;
+            font-size: 1.3em;
             margin-bottom: 0.2em;
+            border-bottom: 1px solid #339cff;
+            padding-bottom: 0.1em;
+            color: #339cff;
         }
         h3 {
-            font-size: 1.2em;
-            margin-bottom: 0.2em;
+            font-size: 1.1em;
+            margin-bottom: 0.1em;
+            color: #0057b8;
         }
         hr {
             border: none;
-            border-top: 2px solid #e74c3c;
-            margin: 24px 0;
+            border-top: 2px dashed #339cff;
+            margin: 18px 0;
         }
         table {
             border-collapse: collapse;
             width: 100%;
-            background: #fafbfc;
-            border-radius: 8px;
-            overflow: hidden;
-            margin-bottom: 24px;
+            margin-bottom: 18px;
         }
         th, td {
-            border: 1px solid #e0e0e0;
-            padding: 10px 12px;
+            border: 1px solid #bbb;
+            padding: 8px 10px;
             text-align: left;
         }
         th {
-            background: #e3eafc;
-            color: #2a2a2a;
-            font-weight: 600;
+            background: #e6f0ff;
+            color: #0057b8;
         }
         tr:hover {
-            background: #f1f7ff;
+            background: #f5f5f5;
         }
         img {
             display: block;
-            margin: 0 auto 16px auto;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
+            margin: 0 auto 12px auto;
+            border: 1.5px solid #339cff;
             max-width: 200px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            width: 200px;
+            height: 260px;
+            object-fit: cover;
+            background: #e6f0ff;
+            border-radius: 18px;
         }
-       
+        .quote {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: 1.15em;
+            color: #003366;
+            background: #e6f0ff;
+            padding: 10px 18px;
+            border-left: 4px solid #0057b8;
+            margin: 10px 0 10px 0;
+            display: block;
+            text-align: center;
+            position: relative;
+        }
+        .quote-author {
+            display: block;
+            font-weight: normal;
+            font-size: 0.95em;
+            color: #444;
+            text-align: right;
+            margin-top: 6px;
+        }
+        .honor-pledge {
+            text-align: center;
+            font-weight: bold;
+            color: #0057b8;
+            margin-top: 10px;
+        }
         ul, ol {
-            margin-bottom: 16px;
+            margin-bottom: 12px;
+            margin-top: 0;
         }
-       
         dl {
-            background: #f8fafd;
-            border-radius: 8px;
-            padding: 12px 16px;
-            margin-bottom: 20px;
+            background: #f3f3f3;
+            padding: 8px 12px;
+            margin-bottom: 14px;
+        }
+        a {
+            color: #0057b8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .disc, .square, .circle {
+            padding-left: 24px;
         }
     </style>
 </head>
@@ -148,23 +213,32 @@
 
     <h2>Others</h2>
     <h3>Favorite Movies</h3>
-    <ol class="roman" start="1">
-        <li>"Catch Me If You Can" directed and produced by Steven Spielberg</li>
-        <li>"Saving Private Ryan" directed by Steven Spielberg and written by Robert Rodat</li>
-        <li>"Forrest Gump" directed by Robert Zemeckis</li>
-    </ol>
+    <div class="movies">
+        <div class="movie-item">
+            <img src="https://m.media-amazon.com/images/I/81K8b6hQGGL._AC_SY679_.jpg" alt="Catch Me If You Can poster">
+            <div><strong>Catch Me If You Can</strong><br><span style="font-size: 0.95em;">Dir. Steven Spielberg</span></div>
+        </div>
+        <div class="movie-item">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/ac/Saving_Private_Ryan_poster.jpg" alt="Saving Private Ryan poster">
+            <div><strong>Saving Private Ryan</strong><br><span style="font-size: 0.95em;">Dir. Steven Spielberg</span></div>
+        </div>
+        <div class="movie-item">
+            <img src="https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg" alt="Forrest Gump poster">
+            <div><strong>Forrest Gump</strong><br><span style="font-size: 0.95em;">Dir. Robert Zemeckis</span></div>
+        </div>
+    </div>
     <h3>Future Goals</h3>
-    <p>“By the end of college, I will build meaningful experiences through campus involvement while maintaining strong academic performance.</p>
+    <p>By the end of college, I will build meaningful experiences through campus involvement while maintaining strong academic performance.</p>
     <h3>Favorite Quote</h3>
-    <p><em>"God said, love your enemy; so I obeyed and loved myself."</em> - The Broken Wings 
-    </p>
+    <div class="quote">
+        "God said, love your enemy; so I obeyed and loved myself."
+        <span class="quote-author">- The Broken Wings</span>
+    </div>
     <hr>
 
         <h3>Honor Pledge</h3>
-    <p>“I affirm that I have not given or received any unauthorized help on this assignment and that this work is my own.”</p>
+    <p class="honor-pledge">“I affirm that I have not given or received any unauthorized help on this assignment and that this work is my own.”</p>
 </div>
 
 </body>
 </html>
-
-
