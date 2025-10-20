@@ -87,15 +87,27 @@ int main() {
 }
 
 void displayBanner() {
-    cout << "$$$$$$$$\                                      $$$$$$\\                                                   $$\\                                         $$\\   $$\\           $$\\       \n";
-    cout << "\\__$$  __|                                     \\_$$  _|                                                  $$ |                                        $$ |  $$ |          $$ |      \n";
-    cout << "   $$ | $$$$$$\\   $$$$$$\\  $$$$$$\\$$$$\\          $$ |  $$$$$$$\\  $$$$$$$\\   $$$$$$\\ $$\\    $$\\ $$$$$$\\ $$$$$$\\    $$$$$$\\   $$$$$$\\   $$$$$$$\\       $$ |  $$ |$$\\   $$\\ $$$$$$$\\  \n";
-    cout << "   $$ |$$  __$$\\  \\____$$\\ $$  _$$  _$$\\         $$ |  $$  __$$\\ $$  __$$\\ $$  __$$\\\\$$\\  $$  |\\____$$\\__$$  _|  $$  __$$\\ $$  __$$\\ $$  _____|      $$$$$$$$ |$$ |  $$ |$$  __$$\\ \n";
-    cout << "   $$ |$$  __$$\\  \\____$$\\ $$  _$$  _$$\\         $$ |  $$  __$$\\ $$  __$$\\ $$  __$$\\\\$$\\  $$  |\\____$$\\__$$  _|  $$  __$$\\ $$  __$$\\ $$  _____|      $$$$$$$$ |$$ |  $$ |$$  __$$\\ \n";
-    cout << "   $$ |$$$$$$$$ | $$$$$$$ |$$ / $$ / $$ |        $$ |  $$ |  $$ |$$ |  $$ |$$ /  $$ | \\$$\\$$  / $$$$$$$ | $$ |    $$ /  $$ |$$ |  \\__||$$$$$$\\        $$  __$$ |$$ |  $$ |$$ |  $$ |\n";
-    cout << "   $$ |$$   ____|$$  __$$ |$$ | $$ | $$ |        $$ |  $$ |  $$ |$$ |  $$ |$$ |  $$ |  \\$$$  / $$  __$$ | $$ |$$\\ $$ |  $$ |$$ |       \\____$$\\       $$ |  $$ |$$ |  $$ |$$ |  $$ |\n";
-    cout << "   $$ |\\$$$$$$$\\ \\$$$$$$$ |$$ | $$ | $$ |      $$$$$$\\ $$ |  $$ |$$ |  $$ |\\$$$$$$  |   \\$  /  \\$$$$$$$ | \\$$$$  |\\$$$$$$  |$$ |      $$$$$$$  |      $$ |  $$ |\\$$$$$$  |$$$$$$$  |\n";
-    cout << "   \\__| \\_______| \\_______|\\__| \\__| \\__|      \\______|\\__|  \\__|\\__|  \\__| \\______/     \\_/    \\_______|  \\____/  \\______/ \\__|      \\_______/       \\__|  \\__| \\______/ \\_______/ \n";
+    cout << "\n";
+    cout << "\n";
+    cout << "MMP\"\"MM\"\"YMM                                    `7MMF'                                                  mm                           \n";
+    cout << "P'   MM   `7                                      MM                                                    MM                           \n";
+    cout << "     MM  .gP\"Ya   ,6\"Yb.  `7MMpMMMb.pMMMb.        MM  `7MMpMMMb.  `7MMpMMMb.  ,pW\"Wq.`7M'   `MF',6\"Yb.mmMMmm ,pW\"Wq.`7Mb,od8 ,pP\"Ybd \n";
+    cout << "     MM ,M'   Yb 8)   MM    MM    MM    MM        MM    MM    MM    MM    MM 6W'   `Wb VA   ,V 8)   MM  MM  6W'   `Wb MM' \"' 8I   `\" \n";
+    cout << "     MM 8M\"\"\"\"\"\"  ,pm9MM    MM    MM    MM        MM    MM    MM    MM    MM 8M     M8  VA ,V   ,pm9MM  MM  8M     M8 MM     `YMMMa. \n";
+    cout << "     MM YM.    , 8M   MM    MM    MM    MM        MM    MM    MM    MM    MM YA.   ,A9   VVV   8M   MM  MM  YA.   ,A9 MM     L.   I8 \n";
+    cout << "   .JMML.`Mbmmd' `Moo9^Yo..JMML  JMML  JMML.    .JMML..JMML  JMML..JMML  JMML.`Ybmd9'     W    `Moo9^Yo.`Mbmo`Ybmd9'.JMML.   M9mmmP' \n";
+    cout << "\n";
+    cout << "\n";
+    cout << "\n";
+    cout << "                                                     ,,                                                                              \n";
+    cout << "                            `7MMF'  `7MMF'          *MM                                                                              \n";
+    cout << "                              MM      MM             MM                                                                              \n";
+    cout << "                              MM      MM `7MM  `7MM  MM,dMMb.                                                                         \n";
+    cout << "                              MMmmmmmmMM   MM    MM  MM    `Mb                                                                        \n";
+    cout << "                              MM      MM   MM    MM  MM     M8                                                                        \n";
+    cout << "                              MM      MM   MM    MM  MM.   ,M9                                                                        \n";
+    cout << "                            .JMML.  .JMML. `Mbod\"YML.P^YbmdP'                                                                         \n";
+    cout << "\n";
     cout << "\n";
 }
 
@@ -252,3 +264,4 @@ void receiptModule(const Reservation& res) {
     cout << "Change: Php " << res.change << endl;
     cout << "Reservation Confirmed! Enjoy your stay!\n";
 }
+
